@@ -1,0 +1,230 @@
+@font-face {
+    font-family: roboto;
+    src: url(roboto.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: roboto;
+    background-color: #fff;
+    margin: 0;
+}
+
+nav {
+    background: linear-gradient(rgba(255,255,255,0.1)), rgba(255,255,255,0.7));
+    /* opacity: 0.8; */
+    height: 10vh;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 3vh;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+
+/* CONTENT */
+header {
+    width: 100%;
+    height: 100vh;
+}
+
+.bg {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.8)), 
+                url(IMG/Universe2.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    width: 90%;
+    height: 70%;
+    background: none;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kolom{
+    margin: 10px;
+    width: 28%;
+    height: 95%;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    overflow: hidden;
+    opacity: 0.8;
+}
+.kolom:hover{
+    width: 30%;
+    height: 100%;
+}
+
+.kolom:hover img {
+    transform: rotate(30deg);
+}
+.kolom .atas {
+    width: 100%;
+    height: 60%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kolom .atas img {
+    width: 60%;
+    height: 55%;
+    /* background: rgb(158, 162, 211); */
+    transition: 2s;
+}
+
+.kolom .tengah {
+    width: 100%;
+    height: 10%;
+    background: #e6c6b6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.kolom .tengah h2 {
+    font-weight: 500;
+    color: #333;
+
+}
+
+.kolom .bawah {
+    width: 100%;
+    height: 30%;
+    background: rgb(231, 209, 209);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kolom .bawah p {
+    width: 80%;
+    height: auto;
+    text-align: center;
+    color: #333;
+}
+
+
+/* FOOTER */
+footer {
+    background: linear-gradient();
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.bgf {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.8)),
+                url(IMG/bgf2.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentf {
+    /* background: #fff; */
+    width: 90%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contentf .atas {
+    /* background: salmon; */
+    height: 30%;
+    width: 100%;
+}
+
+.contentf .bawah{
+    /* background: tomato; */
+    height: 70%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* background: #333; */
+}
+
+input[type = "search"]{
+    border-radius: 50px;
+    padding: 2vh 3vh 2vh 3vh;
+    outline: none;
+    border: none;
+    color: #333;
+    width: 40%;
+    height: 30%;
+    font-size: 1.3em;
+    opacity: 0.8;
+}
+
+.title {
+    overflow: hidden;
+    height: 30%;
+    width: 60%;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    /* align-items: flex-end; */
+    justify-content: center;
+    font-size: 1.3em;
+}
+
+.paragraph {
+    overflow: hidden;
+    height: 70%;
+    width: 60%;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.1em;
+    text-align: center;
+}
